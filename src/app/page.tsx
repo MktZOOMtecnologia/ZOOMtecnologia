@@ -1,9 +1,7 @@
+'use client'
 import { NextPage } from 'next';
 import { Fragment } from 'react';
-// -------- custom hooks -------- //
-import useLightBox from 'hooks/useLightBox';
-import useProgressbar from 'hooks/useProgressbar';
-// -------- custom component -------- //
+
 import { Hero19 } from 'components/blocks/hero';
 import { About20 } from 'components/blocks/about';
 import { Facts13 } from 'components/blocks/facts';
@@ -15,13 +13,10 @@ import { Testimonial16 } from 'components/blocks/testimonial';
 import { Services21, Services22 } from 'components/blocks/services';
 import PageProgress from 'components/common/PageProgress';
 
-const Demo19: NextPage = () => {
-  // lighbox hook called
-  useLightBox();
-  // used for the animated line
-  useProgressbar();
-
+export default function Page() {
+ 
   return (
+    
     <Fragment>
       <PageProgress />
 
@@ -70,5 +65,10 @@ const Demo19: NextPage = () => {
     </Fragment>
   );
 };
-
-export default Demo19;
+  
+ 
+      
+      
+      
+     
+  

@@ -1,5 +1,5 @@
 {
-  "name": "sandbox-nextjs",
+  "name": "zoomtecnologia",
   "version": "1.2.2",
   "private": true,
   "scripts": {
@@ -12,14 +12,16 @@
   "dependencies": {
     "@popperjs/core": "^2.11.8",
     "animate.css": "^4.1.1",
+    "autoprefixer": "^10.4.15",
     "bootstrap": "^5.3.0",
     "clipboard": "^2.0.11",
     "dayjs": "^1.11.7",
     "glightbox": "^3.2.0",
     "isotope-layout": "^3.0.6",
     "itooltip": "^1.1.1",
-    "next": "^13.2.3",
+    "next": "^13.4.19",
     "plyr-react": "^5.2.0",
+    "postcss": "^8.4.29",
     "progressbar.js": "^1.1.0",
     "react": "18.2.0",
     "react-countup": "^6.4.1",
@@ -29,6 +31,7 @@
     "scrollcue": "^2.0.0",
     "sharp": "^0.31.3",
     "swiper": "^9.1.0",
+    "tailwindcss": "^3.3.3",
     "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {

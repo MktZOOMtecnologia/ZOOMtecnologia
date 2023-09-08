@@ -1,3 +1,5 @@
+'use client'
+
 import { FC, Fragment, useState } from 'react';
 import Swiper, { FreeMode, Navigation, Thumbs } from 'swiper';
 import { Swiper as SwiperCarousel, SwiperSlide } from 'swiper/react';

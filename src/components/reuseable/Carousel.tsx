@@ -1,3 +1,5 @@
+'use client'
+
 import { FC, Fragment, ReactElement, useState } from 'react';
 import { Autoplay, Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperProps, SwiperSlide } from 'swiper/react';

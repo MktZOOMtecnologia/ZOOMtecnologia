@@ -4,6 +4,9 @@ Theme URI:
 Version:	1.2.0
 Author:		ui-lib
 */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 // Bootstrap Functions
 @import '../../../node_modules/bootstrap/scss/functions';
