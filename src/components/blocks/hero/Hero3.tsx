@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { slideInDownAnimate } from 'utils/animation';
-import Typewriter from 'typewriter-effect';
+
 // -------- custom hook -------- //
 import useLightBox from 'hooks/useLightBox';
 
@@ -16,13 +16,7 @@ const Hero3: FC = () => {
             <h1 className="display-1 text-white mb-4" style={slideInDownAnimate('600ms')}>
               Sandbox focuses on <br />
               <span className="text-primary text-nowrap">
-                <Typewriter
-                  options={{
-                    loop: true,
-                    autoStart: true,
-                    strings: ['customer satisfaction', 'business needs', 'creative ideas']
-                  }}
-                />
+                
               </span>
             </h1>
 

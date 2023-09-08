@@ -1,16 +1,15 @@
-'use client'
-import { NextPage } from 'next';
+
 import { Fragment } from 'react';
 
 import { Hero19 } from 'components/blocks/hero';
 import { About20 } from 'components/blocks/about';
 import { Facts13 } from 'components/blocks/facts';
 import { Navbar3 } from 'components/blocks/navbar';
-import { Footer11 } from 'components/blocks/footer';
 import { CTA8 } from 'components/blocks/call-to-action';
 import { Portfolio10 } from 'components/blocks/portfolio';
 import { Testimonial16 } from 'components/blocks/testimonial';
 import { Services21, Services22 } from 'components/blocks/services';
+
 import PageProgress from 'components/common/PageProgress';
 
 export default function Page() {
@@ -60,8 +59,7 @@ export default function Page() {
         <CTA8 />
       </main>
 
-      {/* ========== footer section ========== */}
-      <Footer11 />
+      
     </Fragment>
   );
 };

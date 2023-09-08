@@ -1,7 +1,8 @@
 
+
 import { ReactNode } from 'react'
 
-import Head from 'next/head';
+import Head from './head';
 // animate css
 import 'animate.css';
 // import swiper css
@@ -18,17 +19,19 @@ import 'glightbox/dist/css/glightbox.css';
 import 'plugins/scrollcue/scrollCue.css';
 // Bootstrap and custom scss
 import 'assets/scss/style.scss';
+// Footer section
+import { Footer11 } from 'components/blocks/footer';
+
 export default function RootLayout({  children, }: {  children: ReactNode }) {
   return (
     <html lang="pt-br">
                  
-      <Head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Sandbox - Modern & Multipurpose NextJS Template</title>
-      </Head>
+      <Head />
+       
       <body>
         {children}
+        {/* ========== footer section ========== */}
+      <Footer11 />
       </body>
   
       
@@ -36,3 +39,5 @@ export default function RootLayout({  children, }: {  children: ReactNode }) {
     </html>
   )
 }
+
+

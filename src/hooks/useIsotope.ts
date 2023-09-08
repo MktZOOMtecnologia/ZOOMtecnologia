@@ -1,3 +1,5 @@
+'use client'
+
 import Isotope from 'isotope-layout';
 import { useEffect, useRef, useState } from 'react';
 

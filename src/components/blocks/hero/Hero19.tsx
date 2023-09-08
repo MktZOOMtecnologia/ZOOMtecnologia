@@ -9,9 +9,9 @@ const Hero19: FC = () => {
     >
       <div className="container pt-17 pb-19 pt-md-18 pb-md-17 text-center">
         <div className="row">
-          <div className="col-lg-8 col-xl-7 col-xxl-6 mx-auto">
-            <h1 className="display-1 text-white fs-60 mb-4 px-md-15 px-lg-0" style={slideInDownAnimate('0ms')}>
-              We bring solutions to make life <span className="underline-3 style-2 yellow">easier</span>
+          <div className="col-lg-8 col-xl-6 col-xxl-10 mx-auto">
+            <h1 className="display-1 text-white fs-60 mb-4  " style={slideInDownAnimate('0ms')}>
+              Por um mundo conectado <span className="underline-3 style-4 blue"><br/>em possibilidades </span>
             </h1>
 
             <p className="lead fs-24 text-white lh-sm mb-7 mx-md-13 mx-lg-10" style={slideInDownAnimate('300ms')}>

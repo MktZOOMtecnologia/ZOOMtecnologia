@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import Typewriter from 'typewriter-effect';
+
 import { fadeInAnimate, slideInDownAnimate } from 'utils/animation';
 
 const Hero34: FC = () => {
@@ -11,13 +11,7 @@ const Hero34: FC = () => {
             <h1 className="display-1 mb-5 mx-md-10 mx-lg-0" style={slideInDownAnimate('600ms')}>
               Create a powerful but effortless website for <br />
               <span className="typer text-primary text-nowrap">
-                <Typewriter
-                  options={{
-                    loop: true,
-                    autoStart: true,
-                    strings: ['your business.', 'your portfolio.', 'your startup.', 'digital marketing.']
-                  }}
-                />
+               
               </span>
             </h1>
 

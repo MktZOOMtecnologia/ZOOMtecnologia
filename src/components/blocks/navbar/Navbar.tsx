@@ -1,4 +1,4 @@
-
+'use client'
 
 import Link from 'next/link';
 import LinkType from 'types/link';

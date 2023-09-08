@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import Typewriter from 'typewriter-effect';
+
 import { slideInDownAnimate, zoomInAnimate } from 'utils/animation';
 import NextLink from 'components/reuseable/links/NextLink';
 
@@ -18,9 +18,7 @@ const Hero9: FC = () => {
           <div className="col-md-10 offset-md-1 offset-lg-0 col-lg-5 mt-lg-n2 text-center text-lg-start order-2 order-lg-0">
             <h1 className="display-1 mb-5 mx-md-10 mx-lg-0" style={slideInDownAnimate('600ms')}>
               Sandbox is effortless and powerful with <br />
-              <span className="typer text-primary text-nowrap">
-                <Typewriter options={OPTIONS} />
-              </span>
+              
             </h1>
 
             <p className="lead fs-lg mb-7" style={slideInDownAnimate('900ms')}>

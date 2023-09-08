@@ -1,5 +1,5 @@
 
-
+'use client'
 import Link from 'next/link';
 import LinkType from 'types/link';
 import { FC, Fragment, useRef } from 'react';
@@ -46,8 +46,8 @@ const Navbar3: FC<Navbar3Props> = ({ navClassName, logoAlt, stickyBox }) => {
 
   const logos = (
     <>
-      <img className="logo-dark" src={`/img/${logoAlt}.png`} srcSet={`/img/${logoAlt}@2x.png 2x`} alt={logoAlt} />
-      <img className="logo-light" src="/img/logo-light.png" srcSet="/img/logo-light@2x.png 2x" alt="logo-light" />
+      <img className="logo-dark" src={`/img/Horizontal.svg`} srcSet={`/img/Horizontal.svg`} alt={logoAlt} />
+      <img className="logo-light max-w-none w-20" src="/img/Horizontal-white.svg" srcSet="/img/Horizontal-white.svg" alt="logo-light" />
     </>
   );
 
@@ -57,8 +57,8 @@ const Navbar3: FC<Navbar3Props> = ({ navClassName, logoAlt, stickyBox }) => {
 
       <nav ref={navbarRef} className={sticky ? fixedClassName : navClassName}>
         <div className="container justify-content-between align-items-center">
-          <div className="d-flex flex-row w-100 justify-content-between align-items-center d-lg-none">
-            <div className="navbar-brand">
+          <div className="d-flex flex-row w-20 justify-content-between align-items-center d-lg-none">
+            <div className="navbar-brand ">
               <NextLink href="/" title={logos} />
             </div>
 
@@ -83,9 +83,9 @@ const Navbar3: FC<Navbar3Props> = ({ navClassName, logoAlt, stickyBox }) => {
               data-bs-scroll="true"
               className="navbar-collapse offcanvas offcanvas-nav offcanvas-start"
             >
-              <div className="offcanvas-header mx-lg-auto order-0 order-lg-1 d-lg-flex px-lg-15">
-                <NextLink href="/" className="transition-none d-none d-lg-flex" title={logos} />
-                <h3 className="text-white fs-30 mb-0 d-lg-none">Sandbox</h3>
+              <div className="offcanvas-header mx-lg-auto order-0 order-lg-1 d-lg-flex px-lg-15 w-100 h-auto">
+                <NextLink href="/" className="transition-none d-none d-lg-flex w-90 mx-auto max-w-none" title={logos} />
+                <h3 className="text-white fs-30 mb-0 d-lg-none">ZOOMtecnologia</h3>
                 <button
                   type="button"
                   aria-label="Close"
