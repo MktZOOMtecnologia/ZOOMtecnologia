@@ -1,6 +1,7 @@
 
 
 import { ReactNode } from 'react'
+import { Preloader } from '../components/loaders/preloader';
 
 import Head from './head';
 // animate css
@@ -22,13 +23,16 @@ import 'assets/scss/style.scss';
 // Footer section
 import { Footer11 } from 'components/blocks/footer';
 
+
 export default function RootLayout({  children, }: {  children: ReactNode }) {
+  
   return (
     <html lang="pt-br">
                  
       <Head />
        
       <body>
+      
         {children}
         {/* ========== footer section ========== */}
       <Footer11 />

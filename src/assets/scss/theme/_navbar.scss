@@ -91,6 +91,8 @@ header {
   box-shadow: $box-shadow-md;
   background: rgba($white, 0.97);
   animation: slideDown 300ms ease-in-out alternate;
+  
+
   // transform: translateY(-100%);
   // @include transition(all 300ms ease-in-out, padding-right 0ms);
 }

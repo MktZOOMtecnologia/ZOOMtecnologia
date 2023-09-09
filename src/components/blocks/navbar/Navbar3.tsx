@@ -35,7 +35,7 @@ const Navbar3: FC<Navbar3Props> = ({ navClassName, logoAlt, stickyBox }) => {
   const navbarRef = useRef<HTMLElement | null>(null);
 
   // dynamically added navbar classname
-  const fixedClassName = `navbar navbar-expand-lg center-logo transparent position-absolute navbar-light navbar-clone fixed`;
+  const fixedClassName = `backdrop-blur-xl bg-slate-100/25 navbar navbar-expand-lg center-logo transparent position-absolute navbar-light navbar-clone fixed`;
 
   // render inner nav item links
   const renderLinks = (links: LinkType[]) => {
@@ -56,8 +56,8 @@ const Navbar3: FC<Navbar3Props> = ({ navClassName, logoAlt, stickyBox }) => {
       {stickyBox && <div style={{ paddingTop: sticky ? navbarRef.current?.clientHeight : 0 }} />}
 
       <nav ref={navbarRef} className={sticky ? fixedClassName : navClassName}>
-        <div className="container justify-content-between align-items-center">
-          <div className="d-flex flex-row w-20 justify-content-between align-items-center d-lg-none">
+        <div className="container justify-content-between align-items-center rounded-none lg:rounded-3xl bg-transparent">
+          <div className="d-flex flex-row w-100 lg:w-20 justify-content-between align-items-center d-lg-none">
             <div className="navbar-brand ">
               <NextLink href="/" title={logos} />
             </div>
@@ -98,7 +98,7 @@ const Navbar3: FC<Navbar3Props> = ({ navClassName, logoAlt, stickyBox }) => {
                 <div className="navbar-nav ms-lg-auto">
                   {/* ===================== demos nav item ===================== */}
                   <li className="nav-item dropdown dropdown-mega">
-                    <DropdownToggleLink title="Demos" className="nav-link dropdown-toggle" />
+                    <DropdownToggleLink title="Soluções" className="nav-link dropdown-toggle" />
 
                     <ul className="dropdown-menu mega-menu mega-menu-dark mega-menu-img">
                       <li className="mega-menu-content mega-menu-scroll">
@@ -131,7 +131,7 @@ const Navbar3: FC<Navbar3Props> = ({ navClassName, logoAlt, stickyBox }) => {
 
                   {/*  ===================== pages nav item  ===================== */}
                   <li className="nav-item dropdown">
-                    <DropdownToggleLink title="Pages" className="nav-link dropdown-toggle" />
+                    <DropdownToggleLink title="Atas (ARP)" className="nav-link dropdown-toggle" />
 
                     <ul className="dropdown-menu">
                       {pages.map(({ id, title, children }) => {
@@ -143,13 +143,13 @@ const Navbar3: FC<Navbar3Props> = ({ navClassName, logoAlt, stickyBox }) => {
                         );
                       })}
 
-                      <ListItemLink href="/pricing" title="Pricing" linkClassName="dropdown-item" />
+                      <ListItemLink href="/pricing" title="pricing" linkClassName="dropdown-item" />
                     </ul>
                   </li>
 
                   {/* ===================== projects nav item  ===================== */}
                   <li className="nav-item dropdown">
-                    <DropdownToggleLink title="Projects" className="nav-link dropdown-toggle" />
+                    <DropdownToggleLink title="Sobre nós" className="nav-link dropdown-toggle" />
 
                     <div className="dropdown-menu dropdown-lg">
                       <div className="dropdown-lg-content">
@@ -188,7 +188,7 @@ const Navbar3: FC<Navbar3Props> = ({ navClassName, logoAlt, stickyBox }) => {
 
                   {/* ===================== block nav item ===================== */}
                   <li className="nav-item dropdown dropdown-mega">
-                    <DropdownToggleLink title="Blocks" className="nav-link dropdown-toggle" />
+                    <DropdownToggleLink title="Políticas" className="nav-link dropdown-toggle" />
 
                     <ul className="dropdown-menu mega-menu mega-menu-dark mega-menu-img">
                       <li className="mega-menu-content">
@@ -210,7 +210,7 @@ const Navbar3: FC<Navbar3Props> = ({ navClassName, logoAlt, stickyBox }) => {
 
                   {/* ===================== documentation nav item ===================== */}
                   <li className="nav-item dropdown dropdown-mega">
-                    <DropdownToggleLink title="Documentation" className="nav-link dropdown-toggle" />
+                    <DropdownToggleLink title="Contato" className="nav-link dropdown-toggle" />
                     <ul className="dropdown-menu mega-menu">
                       <li className="mega-menu-content">
                         <div className="row gx-0 gx-lg-3">

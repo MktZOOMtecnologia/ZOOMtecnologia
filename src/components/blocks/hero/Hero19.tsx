@@ -1,30 +1,37 @@
 import { FC } from 'react';
 import { slideInDownAnimate } from 'utils/animation';
+import useReplaceMe from 'hooks/useReplaceMe';
 
 const Hero19: FC = () => {
+  
   return (
-    <section
-      className="wrapper image-wrapper bg-image bg-overlay bg-overlay-300"
-      style={{ backgroundImage: 'url(/img/photos/bg16.png)' }}
-    >
-      <div className="container pt-17 pb-19 pt-md-18 pb-md-17 text-center">
-        <div className="row">
-          <div className="col-lg-8 col-xl-6 col-xxl-10 mx-auto">
-            <h1 className="display-1 text-white fs-60 mb-4  " style={slideInDownAnimate('0ms')}>
-              Por um mundo conectado <span className="underline-3 style-4 blue"><br/>em possibilidades </span>
-            </h1>
+    <section className="video-wrapper bg-overlay bg-overlay-gradient px-0 mt-0 min-vh-80">
+      <video
+        loop
+        muted
+        autoPlay
+        playsInline
+        // __idm_id__="1187841"
+        id="1187841"
+        src="/media/movie2.mp4"
+        poster="/img/photos/movie2.jpg"
+      />
 
-            <p className="lead fs-24 text-white lh-sm mb-7 mx-md-13 mx-lg-10" style={slideInDownAnimate('300ms')}>
-              We are a creative company that focuses on long term relationships with customers.
-            </p>
+      <div className="video-content">
+        <div className="container text-center">
+          <div className="row">
+            <div className="col-lg-8 col-xl-10 text-center text-white mx-auto">
+              <h1 className="display-1 fs-54 text-white mb-5">
+                <span className="rotator-zoom">Por um mundo conectado <br/>em possibilidades</span>
+              </h1>
 
-            <div style={slideInDownAnimate('600ms')}>
-              <button className="btn btn-white rounded mb-10 mb-xxl-5">Read More</button>
+              <p className="lead fs-24 mb-0 mx-xxl-8">
+                We are a digital agency specializing in web design, mobile development and seo optimization.
+              </p>
             </div>
           </div>
         </div>
       </div>
-
       <div className="overflow-hidden">
         <div className="divider text-light mx-n2">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60">

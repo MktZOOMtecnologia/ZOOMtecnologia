@@ -34618,8 +34618,9 @@ header {
   top: 0;
   left: 0;
   box-shadow: 0rem 0rem 1.25rem rgba(30, 34, 40, 0.06);
-  background: rgba(255, 255, 255, 0.97);
-  animation: slideDown 300ms ease-in-out alternate;
+  
+  animation: slideDown 500ms ease-in-out alternate;
+  
 }
 
 button.hamburger {
@@ -34672,7 +34673,7 @@ button.hamburger span {
 .navbar.position-absolute:not(.fixed):not(.navbar-light) button.hamburger,
 .navbar.navbar-bg-dark button.hamburger,
 .navbar.navbar-dark button.hamburger {
-  color: #fff;
+  color: #ffffff20;
 }
 
 .card {
